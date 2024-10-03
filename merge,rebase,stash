@@ -1,0 +1,177 @@
+PS C:\Users\User> wsl
+testuser@DESKTOP-3TDTAVN:/mnt/c/Users/User$ cd..
+cd..: command not found
+testuser@DESKTOP-3TDTAVN:/mnt/c/Users/User$ pwd
+/mnt/c/Users/User
+testuser@DESKTOP-3TDTAVN:/mnt/c/Users/User$ cd /mnt/c
+testuser@DESKTOP-3TDTAVN:/mnt/c$ ls
+ls: cannot access 'DumpStack.log.tmp': Permission denied
+ls: cannot access 'hiberfil.sys': Permission denied
+ls: cannot access 'pagefile.sys': Permission denied
+ls: cannot access 'swapfile.sys': Permission denied
+'!running mkcjlxg data'    Intel                  ProgramData                  Windows             pagefile.sys
+'$Recycle.Bin'             OneDriveTemp           Recovery                     bootmgr             swapfile.sys
+ BOOTNXT                   PerfLogs              'System Volume Information'  'cmkcjlxg invalid'  'xthe mkcjlxg win32'
+'Documents and Settings'  'Program Files'         Task5-Guvi                   git-topic
+ DumpStack.log.tmp        'Program Files (x86)'   Users                        hiberfil.sys
+testuser@DESKTOP-3TDTAVN:/mnt/c$ cd task5-Guvi
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git init
+Initialized empty Git repository in /mnt/c/task5-Guvi/.git/
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git add .
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -m "Initial commit with task-guvi files"
+[master (root-commit) 6048c80] Initial commit with task-guvi files
+ 3 files changed, 45 insertions(+)
+ create mode 100644 addition.sh
+ create mode 100644 calculator.sh
+ create mode 100644 hello-world.sh
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -m "Initial commit with task5-guvi files"
+On branch master
+nothing to commit, working tree clean
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ https://github.com/Ashikrahman-94/Task5-Guvi.git
+-bash: https://github.com/Ashikrahman-94/Task5-Guvi.git: No such file or directory
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git remote add origin https://github.com/Ashikrahman-94/Task5-Guvi.git
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git branch -M main
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push -u origin main
+Username for 'https://github.com': Ashikrahman-94
+Password for 'https://Ashikrahman-94@github.com':
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 732 bytes | 12.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/Ashikrahman-94/Task5-Guvi.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git checkout -b develop
+Switched to a new branch 'develop'
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "new  development" >> new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git add feature.txt
+fatal: pathspec 'feature.txt' did not match any files
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git add new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -m "Added new.txt in develop"
+[develop c73bf7f] Added new.txt in develop
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "Update feature" >> feature.txt
+mmit -am "Updated feature.txt"
+
+echo "Another updatestuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -am "Updated feature.txt"
+ feature.txt
+git commit -am "Another update to feature.txt"
+On branch develop
+Untracked files:
+        feature.txt
+
+nothing added to commit but untracked files present
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ 
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "Another update" >> feature.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -am "Another update to feature.txt"
+On branch develop
+Untracked files:
+        feature.txt
+
+nothing added to commit but untracked files present
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "Update devlopmenr" >> new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -am "Updated new.txt"
+[develop 9607461] Updated new.txt
+ 1 file changed, 1 insertion(+)
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "Another update" >> new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git commit -am "Another update to new.txt"
+[develop 623dc35] Another update to new.txt
+ 1 file changed, 1 insertion(+)
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git checkout main
+Switched to branch 'main'
+
+Your branch is up to date with 'origin/main'.
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git checkout develop
+ rebase main
+Switched to branch 'develop'
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git rebase main
+Current branch develop is up to date.
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git add .
+base --continue
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git rebase --continue
+No rebase in progress?
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ echo "Temporary change" >> temp.txt
+xt
+git stash
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git add temp.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git stash
+
+Saved working directory and index state WIP on develop: 623dc35 Another update to new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ 
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git stash pop
+
+On branch develop
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   feature.txt
+        new file:   temp.txt
+
+Dropped refs/stash@{0} (f79a72ecc61769b6b676b0805cb913246b344104)
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ 
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git checkout main
+
+A       feature.txt
+A       temp.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git merge develop
+
+Updating 6048c80..623dc35
+Fast-forward
+ new.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 new.txt
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ 
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push origin main
+
+Username for 'https://github.com': Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Ashikrahman-94/Task5-Guvi.git/'
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push origin main
+Username for 'https://github.com': Ashikrahman-94
+Password for 'https://Ashikrahman-94@github.com':
+Counting objects: 9, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 777 bytes | 7.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Ashikrahman-94/Task5-Guvi.git
+   6048c80..623dc35  main -> main
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push origin develop
+Username for 'https://github.com': Ashikrahman-94
+Password for 'https://Ashikrahman-94@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/Ashikrahman-94/Task5-Guvi/pull/new/develop
+remote:
+To https://github.com/Ashikrahman-94/Task5-Guvi.git
+ * [new branch]      develop -> develop
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$
+
+
+
+
+   6048c80..623dc35  main -> main
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push origin develop
+   6048c80..623dc35  main -> main
+   6048c80..623dc35  main -> main
+   6048c80..623dc35  main -> main
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$ git push origin develop
+Username for 'https://github.com': Ashikrahman-94
+Password for 'https://Ashikrahman-94@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/Ashikrahman-94/Task5-Guvi/pull/new/develop
+remote:
+To https://github.com/Ashikrahman-94/Task5-Guvi.git
+ * [new branch]      develop -> develop
+testuser@DESKTOP-3TDTAVN:/mnt/c/task5-Guvi$
